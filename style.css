@@ -1,0 +1,208 @@
+/* style.css */
+
+/* 1. Farb- und Layoutvariablen */
+:root {
+  --gap:           1rem;
+  --radius:        10px;
+  --shadow:        0 3px 8px rgba(0,0,0,0.1);
+  --transition:    0.3s ease-in-out;
+  --bg:            #f9f9f9;
+  --panel-bg:      #ffffff;
+  --text:          #2c3e50;
+  --accent:        #27ae60;
+  --accent-light:  #2ecc71;
+  --highlight:     #e74c3c;
+  --border:        #dfe6e9;
+}
+
+/* 2. Reset & Grundaufbau */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Skip-Link für Barrierefreiheit */
+.skip-link {
+  position: absolute; left: -999px; top: auto;
+  width: 1px; height: 1px; overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem; top: 1rem; width: auto; height: auto;
+  background: var(--accent); color: #fff;
+  padding: 0.5rem; border-radius: var(--radius);
+  z-index: 1000;
+  text-decoration: none;
+}
+
+/* 3. Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--gap) 0;
+}
+
+/* 4. Header */
+.site-header {
+  position: relative;
+  overflow: hidden;
+  /* осветлённый градиент: от пастельно-кораллового → нежно-розового → светло-лавандового → мягко-мятного */
+  background: rgba(255, 183, 77, 0.3); /* мягкий оранжевый, α = 0.5 */
+  padding: 2rem var(--gap);
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  box-shadow: var(--shadow);
+}
+
+
+/* пульсирующий блик */
+.site-header::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  /* более мягкий белый блик */
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.25), transparent 70%);
+  transform: scale(0);
+  animation: headerGlow 6s ease-in-out infinite;
+}
+
+/* анимация вспышки блика */
+@keyframes headerGlow {
+  0%, 100% { transform: scale(0); opacity: 0; }
+  50%      { transform: scale(1); opacity: 1; }
+}
+
+.site-title {
+  background: linear-gradient(
+    90deg,
+    #c2185b 0%,    /* тёмный цветочный розовый */
+    #388e3c 25%,   /* насыщенный тёмный мятный */
+    #C0C0C0 50%,   /* серебристо-серый */
+    #388e3c 75%,   /* возвращаем тёмный мятный */
+    #c2185b 100%   /* снова цветочный розовый */
+  );
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradientShift 8s ease-in-out infinite;
+}
+
+@keyframes textGradientShift {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+.site-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* 5. Main Content */
+main {
+  flex: 1;
+  padding: var(--gap) 0;
+}
+
+/* 5.1 Intro-Artikel */
+.intro {
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+}
+.intro-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+/* 5.2 Blog-Navigation als einfacher Liste */
+.article-nav {
+  margin-bottom: 2rem;
+}
+.nav-heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+.article-list {
+  list-style: none;
+  padding-left: 0;
+}
+.article-list li {
+  position: relative;
+  margin-bottom: var(--gap);
+  padding-left: 2rem;
+}
+.article-list li::before {
+  content: "🌿";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+.article-list a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color var(--transition), padding-left var(--transition);
+}
+.article-list a:hover {
+  color: var(--accent);
+  padding-left: 0.5rem;
+}
+
+/* 6. Footer */
+.site-footer {
+  background: var(--panel-bg);
+  border-top: 1px solid var(--border);
+  padding: 2rem var(--gap);
+  text-align: center;
+  flex: none;
+}
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.site-footer .copyright {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* 7. Mobile-First Anpassungen */
+@media (max-width: 600px) {
+  .site-title { font-size: 2.4rem; }
+  .intro-heading { font-size: 1.75rem; }
+  .nav-heading { font-size: 1.4rem; }
+  .article-list li { padding-left: 1.5rem; }
+}
