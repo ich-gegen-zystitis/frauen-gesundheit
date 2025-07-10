@@ -1,29 +1,33 @@
-# 🌿 Der ehrliche Abnehmblog — persönliche Erfahrungen von Marta
+# Zystitis Und Ich
 
-Dies ist kein Diätplan und keine Erfolgsgeschichte über „10 Kilo in 2 Wochen“.  
-Es ist ein ruhigerer Ort im Netz – für alle, die sich mit ihrem Gewicht schwer tun und endlich aufhören möchten, sich selbst zu verurteilen.
+Dies ist ein persönlicher Blog, in dem ich – Marta, 48 Jahre alt, verheiratet, berufstätig und Mutter zweier erwachsener Kinder – über meine Erfahrungen mit wiederkehrender Zystitis schreibe.
 
----
+## Worum geht es?
 
-👩‍🍼 Ich bin Marta – Mutter, arbeitstätig, mit wenig Zeit und vielen Gedanken. Nach der Geburt meines Kindes war da plötzlich dieses neue Gewicht. Nicht nur auf der Waage – auch im Kopf. Ich habe vieles probiert: Low Carb, Kalorien zählen, Detox-Tage, Challenges… und oft blieb am Ende nur Frust.
+Viele Frauen kennen die Beschwerden – doch nur wenige sprechen offen darüber. Genau deshalb habe ich mich entschieden, diesen Blog zu starten. Ich teile Gedanken, Erfahrungen und kleine Einsichten, die mir auf meinem Weg geholfen haben.
 
-Mit der Zeit habe ich aufgehört, perfekt sein zu wollen. Und angefangen, mir wirklich zuzuhören.
+Es handelt sich nicht um medizinische Ratschläge, sondern um persönliche Texte aus dem Alltag. Ganz einfach, ehrlich und ohne Fachsprache.
 
----
+## Für wen ist dieser Blog?
 
-📝 In diesem Blog schreibe ich über:
+Für Frauen, die ähnliche Beschwerden erleben, nach Austausch suchen oder sich einfach nicht mehr allein fühlen möchten.  
+Für alle, die lieber echte Geschichten lesen als medizinische PDF-Dateien.
 
-- kleine Schritte, die wirklich etwas verändert haben  
-- Rückschläge und Aha-Momente  
-- Ernährung, Bewegung, Motivation – aber ohne Druck  
-- das gute Gefühl, wenn man zum ersten Mal wieder stolz auf sich ist
+## Was findest du hier?
 
-Ich teile hier meine Erfahrungen – nicht als Expertin, sondern als Mensch, der lange gesucht hat. Vielleicht findest du hier etwas, das dir weiterhilft. Und wenn nicht, dann wenigstens das Gefühl: Du bist nicht allein.
+- Persönliche Erfahrungsberichte  
+- Gedanken zum Leben mit Zystitis  
+- Tipps, die mir selbst geholfen haben  
+- Platz für ehrliche Worte
 
----
+## Haftungsausschluss
 
-🔗 **Website:**  
-[Der ehrliche Abnehmblog](https://gesund-abnehmen.github.io/mein-gewicht)
+Ich bin keine Ärztin. Alle Inhalte basieren auf eigenen Erfahrungen. Bei gesundheitlichen Beschwerden wende dich bitte an Fachpersonal.
+
+
+Danke fürs Vorbeischauen.  
+**– Marta**
+
 
 📬 **Kontakt:**  
 bentondarlain@gmail.com
