@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ich-gegen-zystitis.github.io/frauen-gesundheit/sitemap.xml
